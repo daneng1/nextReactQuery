@@ -1,6 +1,4 @@
-// import {useRouter} from 'next/router'
 import Link from 'next/link'
-// import { useOnePost } from '../../hooks'
 
 export const getServerSideProps = async (context) => {
     const res = await fetch (`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
